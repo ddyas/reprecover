@@ -7,18 +7,23 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Reprecover - Professional Reputation Management Services",
+  title: "RepRecover - Professional Reputation Management Services",
   description:
     "Remove harmful online content and improve your digital reputation. Professional reputation management services for businesses in Australia and globally.",
   keywords:
     "reputation management, online reputation, content removal, review monitoring, SEO repair, crisis management",
-  authors: [{ name: "Reprecover" }],
+  authors: [{ name: "RepRecover" }],
   openGraph: {
-    title: "Reprecover - Professional Reputation Management Services",
+    title: "RepRecover - Professional Reputation Management Services",
     description: "Remove harmful online content and improve your digital reputation.",
     url: "https://reprecover.com",
-    siteName: "Reprecover",
+    siteName: "RepRecover",
     type: "website",
+  },
+  icons: {
+    icon: "/images/favicon.png",
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
   },
     generator: 'v0.dev'
 }

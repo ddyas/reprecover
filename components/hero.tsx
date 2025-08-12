@@ -68,7 +68,7 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="/quote">
+              <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
                 <Button className="bg-sky hover:bg-sky/90 text-white font-semibold py-4 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
                   Get Free Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -156,7 +156,7 @@ export function Hero() {
               <div className="text-center">
                 <div className="text-4xl font-bold text-white mb-2">Free Consultation</div>
                 <p className="text-gray-200 mb-4">Get expert advice on your reputation challenges</p>
-                <Link href="/quote">
+                <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
                   <Button className="bg-white text-navy hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition-all duration-300">
                     Start Now
                   </Button>

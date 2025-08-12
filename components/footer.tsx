@@ -38,7 +38,10 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-3 mb-6" onClick={handleLinkClick}>
               <CheckCircle className="h-8 w-8 text-coral" />
-              <span className="text-2xl font-bold">Reprecover</span>
+              <span className="text-2xl font-bold">
+                <span className="text-white">Rep</span>
+                <span className="text-blue-400 font-light">Recover</span>
+              </span>
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Australia's trusted reputation management experts. Protecting businesses from harmful online content since
@@ -110,7 +113,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Reprecover. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© {new Date().getFullYear()} RepRecover. All rights reserved.</p>
             <p className="text-gray-400 text-sm mt-2 md:mt-0">
               Professional reputation management services for businesses worldwide.
             </p>

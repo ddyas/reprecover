@@ -119,7 +119,7 @@ export default function ContentRemovalPage() {
           }}
         ></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/20">
               <Shield className="h-5 w-5 text-coral mr-2" />
@@ -151,7 +151,7 @@ export default function ContentRemovalPage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+              <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
                 <Button className="bg-coral hover:bg-coral/90 text-white font-semibold text-lg px-12 py-6 rounded-2xl transform hover:scale-105 transition-all duration-300">
                   Get Started Today
                   <ArrowRight className="ml-3 h-5 w-5" />
@@ -237,7 +237,7 @@ export default function ContentRemovalPage() {
             Get a free assessment and see what harmful content we can remove for your business.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+            <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
               <Button className="bg-coral hover:bg-coral/90 text-white font-medium py-3 px-8 rounded-lg">
                 Get Started Today
               </Button>

@@ -121,7 +121,7 @@ export default function QuotePage() {
           }}
         ></div>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40">
+        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/20">
               <CheckCircle className="h-5 w-5 text-coral mr-2" />
@@ -167,7 +167,8 @@ export default function QuotePage() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
+      {/* Quote Form */}
+      <section id="quote-form" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
             <p className="text-lg sm:text-xl text-gray-600">
@@ -454,19 +455,40 @@ export default function QuotePage() {
                     type="button"
                     onClick={prevStep}
                     disabled={currentStep === 1}
-                    className="btn-secondary order-2 sm:order-1"
+                    className="bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded-lg order-2 sm:order-1 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <ArrowLeft className="mr-2 h-4 w-4" />
                     Previous
                   </Button>
 
                   {currentStep < 3 ? (
-                    <Button type="button" onClick={nextStep} className="btn-primary order-1 sm:order-2">
+                    <Button
+                      type="button"
+                      onClick={() => {
+                        if (currentStep === 1) {
+                          if (!formData.firstName || !formData.lastName || !formData.email || !formData.company) {
+                            alert("Please fill in all required fields before proceeding.")
+                            return
+                          }
+                        }
+                        if (currentStep === 2) {
+                          if (!formData.industry || !formData.businessSize || !formData.urgency) {
+                            alert("Please fill in all required fields before proceeding.")
+                            return
+                          }
+                        }
+                        nextStep()
+                      }}
+                      className="bg-coral hover:bg-coral/90 text-white font-semibold py-3 px-6 rounded-lg order-1 sm:order-2"
+                    >
                       Next
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   ) : (
-                    <Button type="submit" className="btn-primary order-1 sm:order-2">
+                    <Button
+                      type="submit"
+                      className="bg-coral hover:bg-coral/90 text-white font-semibold py-3 px-6 rounded-lg order-1 sm:order-2"
+                    >
                       Submit Request
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>

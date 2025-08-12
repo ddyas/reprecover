@@ -232,7 +232,7 @@ export default function AboutPage() {
             Join hundreds of satisfied clients who trust Reprecover to protect their digital reputation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+            <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
               <Button className="bg-coral hover:bg-coral/90 text-white font-medium py-3 px-8 rounded-lg">
                 Get Free Consultation
               </Button>

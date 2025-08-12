@@ -27,7 +27,10 @@ export function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3" onClick={() => window.scrollTo(0, 0)}>
             <CheckCircle className="h-8 w-8 text-coral" />
-            <span className="text-2xl font-bold text-navy">Reprecover</span>
+            <span className="text-2xl font-bold">
+              <span className="text-navy">Rep</span>
+              <span className="text-blue-400 font-light">Recover</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,7 +48,7 @@ export function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+            <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
               <Button className="bg-coral hover:bg-coral/90 text-white font-semibold px-6 py-2 rounded-xl">
                 Get Started
               </Button>
@@ -74,7 +77,20 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Link href="/quote" onClick={handleLinkClick}>
+              <Link
+                href="/quote#quote-form"
+                onClick={() => {
+                  setIsMenuOpen(false)
+                  setTimeout(() => {
+                    const formSection = document.querySelector("#quote-form")
+                    if (formSection) {
+                      formSection.scrollIntoView({ behavior: "smooth" })
+                    } else {
+                      window.scrollTo(0, 600)
+                    }
+                  }, 100)
+                }}
+              >
                 <Button className="bg-coral hover:bg-coral/90 text-white font-semibold w-full py-2 rounded-xl">
                   Get Started
                 </Button>

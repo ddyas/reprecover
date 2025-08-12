@@ -22,7 +22,7 @@ export function HeroSection() {
         }}
       ></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-48">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className={`space-y-12 transition-all duration-1000 ${
@@ -53,21 +53,33 @@ export function HeroSection() {
             <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-coral flex-shrink-0" />
-                <span className="text-sm font-medium">98% Success Rate</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <CheckCircle className="h-5 w-5 text-coral flex-shrink-0" />
                 <span className="text-sm font-medium">24/7 Monitoring</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-coral flex-shrink-0" />
                 <span className="text-sm font-medium">100% Confidential</span>
               </div>
+              <div className="flex items-center space-x-3">
+                <CheckCircle className="h-5 w-5 text-coral flex-shrink-0" />
+                <span className="text-sm font-medium">No Removal-No Fee</span>
+              </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
-              <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+              <Link
+                href="/quote#quote-form"
+                onClick={() => {
+                  setTimeout(() => {
+                    const formSection = document.querySelector("#quote-form")
+                    if (formSection) {
+                      formSection.scrollIntoView({ behavior: "smooth" })
+                    } else {
+                      window.scrollTo(0, 600)
+                    }
+                  }, 100)
+                }}
+              >
                 <Button className="bg-coral hover:bg-coral/90 text-white font-semibold text-lg px-12 py-6 rounded-2xl transition-all duration-300 transform hover:scale-105">
                   Get Free Consultation
                   <ArrowRight className="ml-3 h-5 w-5" />

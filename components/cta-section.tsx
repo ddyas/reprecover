@@ -1,6 +1,8 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -13,8 +15,8 @@ export function CTASection() {
             your digital reputation.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <Link href="/quote" onClick={() => window.scrollTo(0, 0)}>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="/quote#quote-form" onClick={() => window.scrollTo(0, 0)}>
               <Button className="bg-coral hover:bg-coral/90 text-white font-semibold text-lg px-12 py-6 rounded-2xl transform hover:scale-105 transition-all duration-300">
                 Get Free Consultation
                 <ArrowRight className="ml-3 h-5 w-5" />
@@ -25,21 +27,6 @@ export function CTASection() {
                 Contact Us
               </Button>
             </Link>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-12 text-center max-w-3xl mx-auto">
-            <div>
-              <div className="text-3xl font-bold text-coral mb-2">Free</div>
-              <div className="text-gray-200 text-sm">Initial Consultation</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-coral mb-2">Expert</div>
-              <div className="text-gray-200 text-sm">Professional Team</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-coral mb-2">100%</div>
-              <div className="text-gray-200 text-sm">Confidential</div>
-            </div>
           </div>
         </div>
       </div>
