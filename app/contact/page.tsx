@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MessageCircle, Clock, Send } from "lucide-react"
+import { Mail, MessageCircle, Clock, Send, CheckCircle } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -21,11 +21,43 @@ export default function ContactPage() {
     urgency: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Contact form submitted:", formData)
-    alert("Thank you for your message. We'll get back to you within 24 hours!")
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          subject: "",
+          message: "",
+          urgency: "",
+        })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleInputChange = (field: string, value: string) => {
@@ -115,6 +147,19 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h2 className="text-3xl font-bold text-navy mb-8">Send Us a Message</h2>
+              {submitStatus === "success" && (
+                <div className="flex items-center p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 mb-8">
+                  <CheckCircle className="h-5 w-5 mr-2" />
+                  <span>Thank you for your message! We'll get back to you within 24 hours.</span>
+                </div>
+              )}
+
+              {submitStatus === "error" && (
+                <div className="flex items-center p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 mb-8">
+                  <span>Sorry, there was an error sending your message. Please try again or contact us directly.</span>
+                </div>
+              )}
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -207,9 +252,10 @@ export default function ContactPage() {
 
                 <Button
                   type="submit"
-                  className="bg-coral hover:bg-coral/90 text-white font-semibold py-4 px-8 rounded-xl text-lg w-full"
+                  disabled={isSubmitting}
+                  className="bg-coral hover:bg-coral/90 text-white font-semibold py-4 px-8 rounded-xl text-lg w-full disabled:opacity-50"
                 >
-                  Send Message
+                  {isSubmitting ? "Sending..." : "Send Message"}
                   <Send className="ml-2 h-5 w-5" />
                 </Button>
               </form>

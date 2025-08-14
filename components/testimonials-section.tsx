@@ -3,7 +3,7 @@ import { Star, Quote } from "lucide-react"
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Sarah Mitchell",
+      name: "Sarah Wilson", // updated surname from Mitchell to Wilson
       company: "Mitchell & Associates Law",
       location: "Sydney, Australia",
       rating: 5,
@@ -11,7 +11,7 @@ export function TestimonialsSection() {
       result: "Removed 8 negative reviews in 30 days",
     },
     {
-      name: "David Chen",
+      name: "David Tsu", // updated surname from Chen to Tsu
       company: "Chen Restaurant Group",
       location: "Melbourne, Australia",
       rating: 5,
@@ -19,7 +19,7 @@ export function TestimonialsSection() {
       result: "Improved rating from 2.1 to 4.6 stars",
     },
     {
-      name: "Emma Thompson",
+      name: "Emma Tsatsis", // updated surname from Thompson to Tsatsis
       company: "Thompson Medical Centre",
       location: "Brisbane, Australia",
       rating: 5,

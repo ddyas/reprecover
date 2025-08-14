@@ -113,7 +113,7 @@ export default function BlogPage() {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight md:leading-[1.3]">
               Reputation Management
               <span className="block text-transparent bg-gradient-to-r from-coral to-orange-400 bg-clip-text">
                 Insights & Guides
