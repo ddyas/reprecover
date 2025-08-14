@@ -55,8 +55,8 @@ export default function ReputationManagementGuidePage() {
         {/* Featured Image */}
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Online+Reputation+Management+Guide"
-            alt="Online Reputation Management Guide"
+            src="/images/google-reviews-management.png"
+            alt="Professional online reputation management guide showing Google business reviews and customer feedback management strategies"
             width={800}
             height={400}
             className="w-full rounded-lg"

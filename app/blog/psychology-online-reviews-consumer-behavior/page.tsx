@@ -52,8 +52,8 @@ export default function PsychologyReviewsPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Psychology+of+Online+Reviews"
-            alt="Psychology of Online Reviews"
+            src="/images/positive-reviews-thumbs-up.png"
+            alt="Psychology of online reviews showing positive customer feedback and five-star rating system impact on consumer behavior"
             width={800}
             height={400}
             className="w-full rounded-lg"

@@ -51,8 +51,8 @@ export default function RemoveGoogleReviewsPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Google+Reviews+Removal+Guide"
-            alt="Google Reviews Removal Guide"
+            src="/images/google-review-interface.png"
+            alt="Google review removal guide showing how to remove negative reviews and manage Google My Business ratings"
             width={800}
             height={400}
             className="w-full rounded-lg"

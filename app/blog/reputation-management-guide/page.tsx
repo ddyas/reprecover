@@ -50,8 +50,8 @@ export default function ReputationGuideFooterPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Reputation+Management+Complete+Guide"
-            alt="Reputation Management Complete Guide"
+            src="/images/google-reviews-management.png"
+            alt="Professional reputation management services showing Google business reviews and star ratings for effective online reputation control"
             width={800}
             height={400}
             className="w-full rounded-lg"

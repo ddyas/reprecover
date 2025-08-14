@@ -50,8 +50,8 @@ export default function SEOReputationRepairPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=SEO+Reputation+Repair"
-            alt="SEO Reputation Repair"
+            src="/images/customer-review-verification.png"
+            alt="Verified customer review interface with 5-star rating and green checkmark for SEO reputation repair and search result optimization"
             width={800}
             height={400}
             className="w-full rounded-lg"

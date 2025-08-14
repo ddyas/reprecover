@@ -53,8 +53,8 @@ export default function CrisisManagementPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Crisis+Management+Strategy"
-            alt="Crisis Management Strategy"
+            src="/images/customer-review-verification.png"
+            alt="Crisis management for reputation attacks showing verified customer reviews and reputation recovery strategies"
             width={800}
             height={400}
             className="w-full rounded-lg"

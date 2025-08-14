@@ -50,8 +50,8 @@ export default function OnlineReviewBestPracticesPage() {
 
         <div className="mb-12">
           <Image
-            src="/placeholder.svg?height=400&width=800&text=Online+Review+Best+Practices"
-            alt="Online Review Best Practices"
+            src="/images/google-review-interface.png"
+            alt="Google review interface showing 5-star rating system and social sharing options for online review management and reputation building"
             width={800}
             height={400}
             className="w-full rounded-lg"
