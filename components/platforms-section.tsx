@@ -3,14 +3,14 @@ import Image from "next/image"
 
 export function PlatformsSection() {
   const platforms = [
-    { name: "Google Business Profile", src: "/placeholder.svg?height=80&width=80&text=Google" },
-    { name: "Indeed", src: "/placeholder.svg?height=80&width=80&text=Indeed" },
-    { name: "Glassdoor", src: "/placeholder.svg?height=80&width=80&text=Glassdoor" },
-    { name: "Yelp", src: "/placeholder.svg?height=80&width=80&text=Yelp" },
-    { name: "Facebook", src: "/placeholder.svg?height=80&width=80&text=Facebook" },
-    { name: "TripAdvisor", src: "/placeholder.svg?height=80&width=80&text=TripAdvisor" },
-    { name: "ProductReview.com.au", src: "/placeholder.svg?height=80&width=80&text=ProductReview" },
-    { name: "Ripoff Report", src: "/placeholder.svg?height=80&width=80&text=Ripoff+Report" },
+    { name: "Google Business Profile", src: "/images/google-business-profile.png" },
+    { name: "Indeed", src: "/images/indeed.png" },
+    { name: "Glassdoor", src: "/images/glassdoor.png" },
+    { name: "Yelp", src: "/images/yelp.png" },
+    { name: "Facebook", src: "/images/facebook.png" },
+    { name: "TripAdvisor", src: "/images/tripadvisor.png" },
+    { name: "ProductReview.com.au", src: "/images/product-review.png" },
+    { name: "Ripoff Report", src: "/images/ripoff-report.png" },
   ]
 
   return (
@@ -36,7 +36,6 @@ export function PlatformsSection() {
                 height={80}
                 className="h-14 w-14 object-contain mb-4 group-hover:scale-110 transition-transform"
               />
-              <span className="text-xs font-medium text-gray-700 leading-tight">{platform.name}</span>
             </div>
           ))}
         </div>
