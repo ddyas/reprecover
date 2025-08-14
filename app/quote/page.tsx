@@ -56,11 +56,27 @@ export default function QuotePage() {
     if (currentStep > 1) setCurrentStep(currentStep - 1)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-    setCurrentStep(4) // Show success message
+
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setCurrentStep(4) // Show success message
+      } else {
+        alert("There was an error submitting your request. Please try again.")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      alert("There was an error submitting your request. Please try again.")
+    }
   }
 
   const industries = [

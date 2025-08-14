@@ -14,7 +14,7 @@ export function TrustLogos() {
         <div className="text-center mb-8">
           <p className="text-gray-600 font-medium">As Featured In</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-50">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
           {mediaLogos.map((logo, index) => (
             <div key={index} className="grayscale hover:grayscale-0 transition-all duration-300">
               <Image
@@ -22,7 +22,7 @@ export function TrustLogos() {
                 alt={`${logo.name} logo - RepRecover featured in ${logo.name}`}
                 width={index === 0 ? 240 : 350}
                 height={index === 0 ? 120 : 175}
-                className={index === 0 ? "h-24 w-auto object-contain" : "h-[98px] w-auto object-contain"}
+                className={index === 0 ? "h-24 w-auto object-contain" : "h-[102px] w-auto object-contain"}
               />
             </div>
           ))}

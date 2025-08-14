@@ -188,7 +188,7 @@ export default function FAQPage() {
               <span className="text-white font-medium">Expert Reputation Guidance</span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.7]">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-[1.3] md:leading-[1.7]">
               Frequently Asked{" "}
               <span className="text-transparent bg-gradient-to-r from-coral to-orange-400 bg-clip-text">Questions</span>
             </h1>

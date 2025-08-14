@@ -93,18 +93,18 @@ export function HeroSection() {
             </div>
 
             {/* Social Proof */}
-            <div className="flex justify-center items-center space-x-16 pt-16 border-t border-white/10 max-w-2xl mx-auto">
+            <div className="flex justify-center items-center space-x-8 sm:space-x-16 pt-16 border-t border-white/10 max-w-2xl mx-auto px-4 sm:px-0">
               <div className="text-center">
-                <div className="text-4xl font-bold text-coral">500+</div>
-                <div className="text-sm text-gray-300 mt-2">Clients Helped</div>
+                <div className="text-2xl sm:text-4xl font-bold text-coral">500+</div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">Clients Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-coral">98%</div>
-                <div className="text-sm text-gray-300 mt-2">Success Rate</div>
+                <div className="text-2xl sm:text-4xl font-bold text-coral">98%</div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">Success Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-coral">24/7</div>
-                <div className="text-sm text-gray-300 mt-2">Support</div>
+                <div className="text-2xl sm:text-4xl font-bold text-coral">24/7</div>
+                <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">Support</div>
               </div>
             </div>
           </div>
