@@ -60,7 +60,7 @@ export default function AboutPage() {
 
   const achievements = [
     { number: "500+", label: "Clients Served", icon: Users },
-    { number: "98%", label: "Success Rate", icon: Award },
+    { number: "68%", label: "Success Rate", icon: Award },
     { number: "24/7", label: "Support Available", icon: Globe },
     { number: "5+", label: "Years Experience", icon: Shield },
   ]
@@ -207,7 +207,7 @@ export default function AboutPage() {
               <CheckCircle className="h-12 w-12 text-coral mb-6" />
               <h3 className="text-xl font-semibold mb-4">Proven Track Record</h3>
               <p className="text-gray-200">
-                98% success rate with over 500 satisfied clients across Australia and globally.
+                68% success rate with over 500 satisfied clients across Australia and globally.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">

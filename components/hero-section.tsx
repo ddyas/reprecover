@@ -99,7 +99,7 @@ export function HeroSection() {
                 <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">Clients Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-4xl font-bold text-coral">98%</div>
+                <div className="text-2xl sm:text-4xl font-bold text-coral">68%</div>
                 <div className="text-xs sm:text-sm text-gray-300 mt-1 sm:mt-2">Success Rate</div>
               </div>
               <div className="text-center">

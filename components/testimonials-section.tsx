@@ -69,7 +69,7 @@ export function TestimonialsSection() {
         <div className="text-center mt-16">
           <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="bg-sky/10 rounded-2xl p-8">
-              <div className="text-3xl font-bold text-navy mb-2">98%</div>
+              <div className="text-3xl font-bold text-navy mb-2">68%</div>
               <div className="text-gray-600 text-sm">Success Rate</div>
             </div>
             <div className="bg-sky/10 rounded-2xl p-8">

@@ -54,7 +54,7 @@ export function Hero() {
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-5 w-5 text-sky flex-shrink-0" />
-                <span className="text-sm font-medium">98% Success Rate</span>
+                <span className="text-sm font-medium">68% Success Rate</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle className="h-5 w-5 text-sky flex-shrink-0" />
@@ -88,7 +88,7 @@ export function Hero() {
                 <div className="text-sm text-gray-300">Clients Helped</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-sky">98%</div>
+                <div className="text-3xl font-bold text-sky">68%</div>
                 <div className="text-sm text-gray-300">Success Rate</div>
               </div>
               <div className="text-center">

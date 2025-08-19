@@ -154,7 +154,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-coral mr-2" />
-                <span>98% Success Rate</span>
+                <span>68% Success Rate</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-coral mr-2" />

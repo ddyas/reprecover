@@ -31,7 +31,7 @@ export default function FAQPage() {
         {
           question: "Do you guarantee results?",
           answer:
-            "Whilst we maintain a 98% success rate, we cannot guarantee specific outcomes as each case is unique. However, we only take on cases where we believe we can achieve meaningful results, and we provide honest assessments during our initial consultation.",
+            "Whilst we maintain a 68% success rate, we cannot guarantee specific outcomes as each case is unique. However, we only take on cases where we believe we can achieve meaningful results, and we provide honest assessments during our initial consultation.",
         },
         {
           question: "Is your service confidential?",
@@ -200,7 +200,7 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-coral mr-2" />
-                <span>98% Success Rate</span>
+                <span>68% Success Rate</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-coral mr-2" />
