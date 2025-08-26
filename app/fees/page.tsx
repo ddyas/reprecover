@@ -28,10 +28,10 @@ export default function FeesPage() {
       confidence: ">50%",
       averageTime: "28 days",
       pricing: [
-        { range: "1-5 Reviews", price: "$750" },
-        { range: "6-10 Reviews", price: "$675" },
-        { range: "11-25 Reviews", price: "$635" },
-        { range: "26-50 Reviews", price: "$585" },
+        { range: "1-5 Reviews", price: "POA" },
+        { range: "6-10 Reviews", price: "POA" },
+        { range: "11-25 Reviews", price: "POA" },
+        { range: "26-50 Reviews", price: "POA" },
         { range: "50+ Reviews", price: "POA" },
       ],
     },
@@ -58,7 +58,7 @@ export default function FeesPage() {
         "Great work guys. A big thank you to the team at RepRecover for saving our business following a spree of fake reviews on our business. We worked with RepRecover for a total of 5 weeks. During this time they cleaned up over 90% of the negative and fake reviews that were spread across our business. They were friendly, affordable and most of all, very effective. We are very happy with the outcome and highly recommend this service.",
     },
     {
-      name: "Mark Powell",
+      name: "Bruce Hales",
       ratingIncrease: "+0.3",
       reviewsRemoved: "6 Reviews Removed",
       quote:
@@ -238,7 +238,7 @@ export default function FeesPage() {
 
             <div className="text-center mt-8">
               <p className="text-slate-400 text-sm">
-                *POA = Price on Application. All prices in AUD. Success rates based on historical data.
+                *POA = Price on Application. All prices in AUD plus GST. Success rates based on historical data.
               </p>
             </div>
           </div>
