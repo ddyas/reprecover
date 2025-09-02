@@ -144,7 +144,7 @@ export default function FeesPage() {
             </div>
 
             {/* Pricing Tables */}
-            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-8 mb-16 mx-6 sm:mx-0">
+            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-4 sm:p-8 mb-16 mx-2 sm:mx-0">
               <h2 className="text-4xl font-bold text-white text-center mb-8">Transparent Pricing Structure</h2>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
@@ -154,7 +154,7 @@ export default function FeesPage() {
                     className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 hover:border-coral/30 transition-colors"
                   >
                     <div className="text-center mb-6">
-                      <h3 className="text-2xl font-bold text-white mb-2">{tier.platform}</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{tier.platform}</h3>
                       <div className="flex justify-center space-x-4 text-sm text-slate-300 mb-4">
                         <span>Confidence: {tier.confidence}</span>
                         <span>•</span>
@@ -166,9 +166,9 @@ export default function FeesPage() {
                       {tier.pricing.map((price, priceIndex) => (
                         <div
                           key={priceIndex}
-                          className="flex justify-between items-center py-3 px-4 bg-white/5 rounded-lg border border-white/10"
+                          className="flex justify-between items-center py-3 px-3 sm:px-4 bg-white/5 rounded-lg border border-white/10"
                         >
-                          <span className="text-white font-medium">{price.range}</span>
+                          <span className="text-white font-medium text-sm sm:text-base">{price.range}</span>
                           <span className="text-coral font-bold text-lg">{price.price}</span>
                         </div>
                       ))}
@@ -191,7 +191,7 @@ export default function FeesPage() {
               </div>
             </div>
 
-            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-8 mb-16 mx-6 sm:mx-0">
+            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-4 sm:p-8 mb-16 mx-2 sm:mx-0">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div>
                   <h2 className="text-4xl font-bold text-white mb-8">Why Choose RepRecover?</h2>
@@ -250,7 +250,7 @@ export default function FeesPage() {
               </div>
             </div>
 
-            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-8 mb-16 mx-6 sm:mx-0">
+            <div className="bg-slate-50/5 backdrop-blur-sm rounded-3xl p-4 sm:p-8 mb-16 mx-2 sm:mx-0">
               <h2 className="text-4xl font-bold text-white text-center mb-12">Client Success Stories</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {testimonials.map((testimonial, index) => (
@@ -277,7 +277,7 @@ export default function FeesPage() {
               </div>
             </div>
 
-            <div className="mb-24 px-6 sm:px-0">
+            <div className="mb-24 px-2 sm:px-0">
               <div className="bg-gradient-to-r from-coral to-orange-400 rounded-3xl p-8 md:p-12 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Protect Your Reputation?</h2>
                 <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
