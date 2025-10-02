@@ -151,11 +151,11 @@ export default function FeesUSDPage() {
               {pricingTiers.map((tier, index) => (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 border border-white/20 hover:border-coral/30 transition-colors"
+                  className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 border border-gray-200 hover:border-coral/50 transition-colors shadow-lg"
                 >
                   <div className="text-center mb-6">
-                    <h3 className="text-2xl font-bold text-white mb-2">{tier.platform}</h3>
-                    <div className="flex justify-center space-x-4 text-sm text-slate-300 mb-4">
+                    <h3 className="text-2xl font-bold text-navy mb-2">{tier.platform}</h3>
+                    <div className="flex justify-center space-x-4 text-sm text-gray-600 mb-4">
                       <span>Confidence: {tier.confidence}</span>
                       <span>•</span>
                       <span>Avg: {tier.averageTime}</span>
@@ -166,16 +166,16 @@ export default function FeesUSDPage() {
                     {tier.pricing.map((price, priceIndex) => (
                       <div
                         key={priceIndex}
-                        className="flex justify-between items-center py-3 px-4 bg-white/5 rounded-lg border border-white/10"
+                        className="flex justify-between items-center py-3 px-4 bg-gray-50 rounded-lg border border-gray-200"
                       >
-                        <span className="text-white font-medium">{price.range}</span>
+                        <span className="text-navy font-medium">{price.range}</span>
                         <span className="text-coral font-bold text-lg">{price.price}</span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="mt-6 pt-6 border-t border-white/20">
-                    <div className="flex items-center justify-center space-x-2 text-slate-300 text-sm">
+                  <div className="mt-6 pt-6 border-t border-gray-200">
+                    <div className="flex items-center justify-center space-x-2 text-gray-600 text-sm">
                       <CheckCircle className="h-4 w-4 text-coral" />
                       <span>No Removal, No Fee Guarantee</span>
                     </div>
