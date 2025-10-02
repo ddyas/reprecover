@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reprecover.com/sitemap.xml
+Sitemap: https://www.reprecover.com/sitemap.xml
